@@ -1,0 +1,35 @@
+Dataloader:
+  dataset_num: 'FD003'
+  window_step: 1
+  bsc: True
+  scaling_method: '-11'
+Training:
+  epochs: 180
+  waiting_epochs: 130
+  interval: 5
+Optuna:
+  n_trials: 200 
+  batch_size_low: 512 
+  batch_size_high: 1024
+  batch_size_step: 16
+  hidden_size_low: 56
+  hidden_size_high: 112
+  hidden_size_step: 8
+  out_channel_low: 32
+  out_channel_high: 64
+  out_channel_step: 8
+  out_feature_high: 48
+  out_feature_low: 24
+  out_feature_step: 4
+  learning_rate_low: 0.005 
+  learning_rate_high: 0.01
+  initializer_1: 'xavier_u'
+  initializer_2: 'kaiming_u'
+  initializer_3: 'xavier_n'
+  initializer_4: 'kaiming_n'  
+Plotting:
+  First: [19,34,89,99]
+  Second: [14,19,44,89,99]
+  Third: [2,9,52,74,89]
+  Fourth: [14,19,31,56,91,99]
+
